@@ -56,8 +56,9 @@
 
 
 <h2 id="about-the-project"> About the Project </h2>
-
-<p> lorem ipsum </p>
+<img width="681" height="145" alt="Screenshot 2026-05-23 165801" src="https://github.com/user-attachments/assets/937d330f-a8be-4a9b-957d-26f053f79862" />
+<p> When an enterprise Linux server is compromised, one of the immediate actions taken by the attacker is to create a backdoor user to achieve persistence. Once a new user is created, /etc/passwd and /etc/shadow (which contain all user information in the system) will be modified. </p>
+<p> This lightweight Python tool is designed to check the integrity of these sensitive files by comparing them with their initial SHA-256 hash values every hour. Alerts will be sent to a SOC Webhook server if discrepancies are detected, allowing incident responders to take immediate remediation action. </p
 <p align="right">(<a href="#top">Back to Top</a>)</p>
 
 
@@ -81,7 +82,7 @@ The File Integrity Monitor is designed to use on the unix system, please make su
 <p> 1. System Update and Installation of Python </p>
 <pre> <code lang="bash"> sudo apt update && sudo apt install -y python3.12-venv </code> </pre>
 <p> 2. Configure a Discord Webhook Server </p>
-<p> 2-1. Navigate to <a href="https://discord.com"> Discord </a> and Login </p>
+<p> 2-1. Navigate to <a href="https://discord.com"> Discord</a> and Login </p>
 <img width="1851" height="965" alt="2" src="https://github.com/user-attachments/assets/4ffcb751-461d-4d9d-bd9b-f5c570db63de" /><br>
 <p> 2-2. Scroll down the navbar on the left and press "Add a Server" </p>
 <img width="467" height="208" alt="2 0" src="https://github.com/user-attachments/assets/373f25c0-33a6-4195-b7ff-2d6040171e8c" /><br>
@@ -137,10 +138,10 @@ The File Integrity Monitor is designed to use on the unix system, please make su
 <pre> <code lang="bash">useradd hacker</code> </pre>
 <pre> <code lang="bash">passwd hacker</code> </pre>
 <img width="408" height="26" alt="Screenshot 2026-05-23 164214" src="https://github.com/user-attachments/assets/e00c2fe1-9fb1-495c-9ca8-17f9d0c6e0a8" />
-<p> A backdoor user "hacker" wass added into /etc/passwd and /etc/shadow </p>
-<p> 4. The script detected the files were edited, the following alert will be shown </p>
+<p> A backdoor user "hacker" was added into /etc/passwd and /etc/shadow </p>
+<p> 4. After an hour the script ran automatically and detected the files were edited, the following alert was shown </p>
 <img width="681" height="145" alt="Screenshot 2026-05-23 165801" src="https://github.com/user-attachments/assets/5339fa67-f81a-43c1-9dc0-7b518b60979d" />
-<p> 5. And the alert is also sent to your webhook server, so you can be alerted immediately on your workstation</p>
+<p> 5. And the alert was also sent to your webhook server, so you can be alerted immediately on your workstation</p>
 <img width="553" height="138" alt="Screenshot 2026-05-23 165817" src="https://github.com/user-attachments/assets/0a22dee6-6f96-48bc-9e3a-ef7ad26518bd" />
 <p> 6. The monitor run automatically for every hour (3600 seconds) to keep checking file integrity </p>
 <p align="right">(<a href="#top">Back to Top</a>)</p>
