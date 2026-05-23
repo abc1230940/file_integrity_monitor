@@ -139,7 +139,7 @@ The File Integrity Monitor is designed to use on the unix system, please make su
 <pre> <code lang="bash">passwd hacker</code> </pre>
 <img width="408" height="26" alt="Screenshot 2026-05-23 164214" src="https://github.com/user-attachments/assets/e00c2fe1-9fb1-495c-9ca8-17f9d0c6e0a8" />
 <p> A backdoor user "hacker" was added into /etc/passwd and /etc/shadow </p>
-<p> 4. After an hour the script ran automatically and detected the files were edited, the following alert was shown </p>
+<p> 4. After an hour the script ran again and detected the files were edited, the following alert was shown </p>
 <img width="681" height="145" alt="Screenshot 2026-05-23 165801" src="https://github.com/user-attachments/assets/5339fa67-f81a-43c1-9dc0-7b518b60979d" />
 <p> 5. And the alert was also sent to your webhook server, so you can be alerted immediately on your workstation</p>
 <img width="553" height="138" alt="Screenshot 2026-05-23 165817" src="https://github.com/user-attachments/assets/0a22dee6-6f96-48bc-9e3a-ef7ad26518bd" />
