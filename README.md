@@ -93,7 +93,7 @@ The File Integrity Monitor is designed to use on the unix system, please make su
 <img width="548" height="465" alt="2 2" src="https://github.com/user-attachments/assets/fc8fe3bc-c7be-47f6-915d-33f621b0f742" /><br>
 <p> 2-5. Customize Your Server </p>
 <p> Give a name to your server and i named "File Integrity Monitor" </p>
-<img width="552" height="517" alt="2 3" src="https://github.com/user-attachments/assets/2d3f9904-fa44-4d64-a971-2a2866700383" /><br>
+<img width="547" height="517" alt="Screenshot 2026-05-23 154718" src="https://github.com/user-attachments/assets/37ce406a-ab72-4d6d-81ad-c8b2b2adf3bc" />
 <p> 2-6. A server is installed </p>
 <p> Click the Gear icon next to # general </p>
 <img width="1503" height="821" alt="2 4" src="https://github.com/user-attachments/assets/8aeef7c3-6660-4663-9679-96c88d535915" /><br>
@@ -104,4 +104,21 @@ The File Integrity Monitor is designed to use on the unix system, please make su
 <img width="970" height="606" alt="2 8" src="https://github.com/user-attachments/assets/975b1735-aeb7-45d1-9b55-864bd0d8daf7" /><br>
 <p> 2.9. Click "Copy Webhook URL" button and paste it to your clipboard </p>
 <img width="873" height="523" alt="2 9" src="https://github.com/user-attachments/assets/fad75ac0-ec8d-470b-b27a-f9b459e27489" /><br>
+<img width="1252" height="105" alt="Screenshot 2026-05-23 154908" src="https://github.com/user-attachments/assets/59c4cedb-4497-4183-a408-6b592eb33e9e" />
 <p> 2.10. Great! The Webhook server is created! </p>
+
+
+<h3 id="installation"> Installation </h3>
+<p> 1. Clone the Repo </p>
+<pre> <code lang="bash">git clone [https://github.com/abc1230940/web-server-port-alerter.git](https://github.com/abc1230940/file_integrity_monitor.git)</code> </pre>
+<p> 2. Navigate into the folder </p>
+<pre> <code lang="bash">cd file_integrity_monitor</code> </pre> 
+<p> 3. Set up the virtual environment </p>
+<pre> <code lang="bash">python3 -m venv env</code> </pre>
+<p> 4. Activate the virtual environment </p>
+<pre> <code lang="bash">source env/bin/activate</code> </pre>
+<p> 5. Install the required dependancies </p>
+<pre> <code lang="bash">pip install -r requirements.txt</code> </pre>
+<p> 6. Deactivate the virtual environment when finished </p>
+<pre> <code lang="bash">deactivate </code> </pre>
+<p align="right">(<a href="#top">Back to Top</a>)</p>
