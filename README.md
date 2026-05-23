@@ -97,7 +97,7 @@ The File Integrity Monitor is designed to use on the unix system, please make su
 <p> 2-6. A server is installed </p>
 <p> Click the Gear icon next to # general </p>
 <img width="1503" height="821" alt="2 4" src="https://github.com/user-attachments/assets/8aeef7c3-6660-4663-9679-96c88d535915" /><br>
-<p> 2-7. Click "Integration" </p>
+<p> 2-7. Click "Integrations" </p>
 <img width="322" height="293" alt="2 6" src="https://github.com/user-attachments/assets/9cbf5013-aa5a-4589-a794-bdf07ec93482" /><br>
 <p> 2-8. Click "Create Webhook" button </p>
 <img width="963" height="497" alt="2 7" src="https://github.com/user-attachments/assets/8696f10d-5717-45e7-9812-c900793bab44" /><br>
@@ -121,4 +121,27 @@ The File Integrity Monitor is designed to use on the unix system, please make su
 <pre> <code lang="bash">pip install -r requirements.txt</code> </pre>
 <p> 6. Deactivate the virtual environment when finished </p>
 <pre> <code lang="bash">deactivate </code> </pre>
+<p align="right">(<a href="#top">Back to Top</a>)</p>
+
+
+<h2 id="usage"> Usage </h2>
+<p> 1. Edit the python script and then save</p>
+<pre> <code lang="bash">nano file_integrity_monitor.py</code> </pre>
+<img width="687" height="115" alt="Screenshot 2026-05-23 161220" src="https://github.com/user-attachments/assets/0fa77db0-b1c6-4a99-8314-e3f0f9136a2b" />
+<p> ❗The monitor is designed to scan the sensitive files (/etc/passwd and /etc/shadow), but you can edit to scan targeted file paths
+<p> ❗Paste your <strong>Webhook URL</strong> from the clipboard you have done before</p>
+<p> 2. Launch the file integrity monitor script to begin monitoring </p>
+<pre> <code lang="bash">sudo python3 file_integrity_monitor.py</code> </pre>
+<p> 3. If the targeted port was closed or service was down, the following alert will be shown </p>
+<img width="845" height="62" alt="2 12" src="https://github.com/user-attachments/assets/9992c26f-5802-4c32-a91a-b2811bf76896" />
+<p> 4. And the alert is also sent to your webhook server, so you can be alerted immediately on your workstation</p>
+<img width="1103" height="125" alt="2 10" src="https://github.com/user-attachments/assets/50e20e1e-e0e1-4bc7-9511-0096cfaf5854" />
+<p> 5. The alerter is run automatically for every hour (3600 seconds) to keep checking the operation of your server</p>
+<p align="right">(<a href="#top">Back to Top</a>)</p>
+
+
+<h2 id="acknowledgement"> Acknowledgement </h2>
+<p> </p><a href="https://app.letsdefend.io/training/lessons/python-for-blue-team"> LetsDefend - Python for Blue Team </a> </p>
+<p> </p><a href="https://discord.com"> Discord </a> </p> 
+<img width="1506" height="786" alt="2 14" src="https://github.com/user-attachments/assets/0013778a-8ff6-4bcb-8bd2-e2789f523c59" />
 <p align="right">(<a href="#top">Back to Top</a>)</p>
